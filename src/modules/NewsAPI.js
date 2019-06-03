@@ -6,7 +6,7 @@ class NewsAPI {
     this.baseURL = "https://newsapi.org/v2/";
     this.endpoints = ["everything", "top-headlines"];
 
-    this.APIKey = "0f89c66f2e8241fb8dc9e5a641163a63";
+    this.APIKey = process.env.NEWS_API_KEY;
   }
 
   async call() {
